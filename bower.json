@@ -1,0 +1,19 @@
+{
+  "name": "stitchapp-test-samedwards",
+  "description": "Code assessment",
+  "main": "",
+  "authors": [
+    "Sam Edwards <sam@samedwards.net>"
+  ],
+  "license": "MIT",
+  "homepage": "https://github.com/roguezedd/stitch-fe-test",
+  "moduleType": [],
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ]
+}
