@@ -6,6 +6,7 @@ goog.require('app.common.module');
 goog.require('app.detail.controller')
 
 goog.require('lib.angular');
+goog.require('lib.textangular.base');
 
-app.detail.module = angular.module('app.detail.module', [app.common.module.name])
+app.detail.module = angular.module('app.detail.module', ['textAngular', app.common.module.name])
     .controller('DetailStateController',app.detail.controller.StateController );

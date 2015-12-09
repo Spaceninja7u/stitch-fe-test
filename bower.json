@@ -26,6 +26,7 @@
     "google-closure-library": "*",
     "jquery": "~2.1.4",
     "moment": "momentjs#~2.10.6",
-    "angular-contenteditable": "~0.3.8"
+    "angular-contenteditable": "~0.3.8",
+    "textAngular": "~1.4.6"
   }
 }

@@ -155,6 +155,14 @@
   bottom: 0;
   margin-bottom: 0; // override .navbar defaults
   border-width: 1px 0 0;
+  margin-left:0 !important;
+  margin-right:0 !important;
+  padding-right:15px;
+  background-color:@mdc-blue-grey-600 !important;
+  .navbar-btn {
+    background-color:@mdc-green-600;
+    color:@mdc-green-50;
+  }
 }
 
 
@@ -163,7 +171,7 @@
 .navbar-brand {
   float: left;
   padding: @navbar-padding-vertical @navbar-padding-horizontal;
-  font-size: @font-size-large;
+  font-size: @font-size-small;
   line-height: @line-height-computed;
   height: @navbar-height;
 
@@ -393,14 +401,16 @@
 
 // Default navbar
 .navbar-default {
-  background-color: @navbar-default-bg;
-  border-color: @navbar-default-border;
+  background-color: @mdc-blue-grey-900;
+  border-color: @mdc-blue-grey-900;
+  margin-left:-15px;
+  margin-right:-15px;
 
   .navbar-brand {
-    color: @navbar-default-brand-color;
+    color: @mdc-orange-500;
     &:hover,
     &:focus {
-      color: @navbar-default-brand-hover-color;
+      color: @mdc-orange-500;
       background-color: @navbar-default-brand-hover-bg;
     }
   }
@@ -411,11 +421,11 @@
 
   .navbar-nav {
     > li > a {
-      color: @navbar-default-link-color;
+      color: @mdc-light-blue-300;
 
       &:hover,
       &:focus {
-        color: @navbar-default-link-hover-color;
+        color: @mdc-light-blue-400;
         background-color: @navbar-default-link-hover-bg;
       }
     }
@@ -423,8 +433,8 @@
       &,
       &:hover,
       &:focus {
-        color: @navbar-default-link-active-color;
-        background-color: @navbar-default-link-active-bg;
+        color: @mdc-orange-300;
+        background-color: @mdc-blue-grey-900;
       }
     }
     > .disabled > a {

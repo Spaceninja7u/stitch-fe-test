@@ -29,6 +29,6 @@ app.create.controller.StateController = function($scope, $stateParams, $state, C
 
 };
 
-app.create.controller.StateController.prototype.save = function() {
+app.create.controller.StateController.prototype.create = function() {
 
 };

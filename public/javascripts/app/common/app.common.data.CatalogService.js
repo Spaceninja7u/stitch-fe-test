@@ -6,6 +6,11 @@ goog.provide('app.common.data.apiendpoints');
 
 app.common.data.apiendpoints.list = 'shopify/get?path=/admin/products.json';
 
+
+app.common.data.apiendpoints.update = 'shopify/update?path=/admin/products/{productId}.json';
+
+app.common.data.apiendpoints.create = '/admin/products.json';
+
 /**
  *
  * @param {angular.$http} $http
@@ -65,5 +70,16 @@ app.common.data.CatalogService.prototype.getProduct = function(productId) {
         }
         return currentProduct;
     });
+
+};
+
+app.common.data.CatalogService.prototype.updateBasic = function(productData) {
+    return this.ij_.http({ method:'POST',
+                    url:app.common.data.apiendpoints.update.split('{productId}').join(productData.id),
+                    data:productData});//{title:productData.title, vendor:productData.vendor, body_html:productData.body_html}})
+
+};
+
+app.common.data.CatalogService.prototype.create = function(productData) {
 
 };

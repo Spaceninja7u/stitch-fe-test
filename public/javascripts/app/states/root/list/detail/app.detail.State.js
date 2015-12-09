@@ -10,7 +10,7 @@ app.detail.state.Detail = {
     url:'product/:id', //resolves to /list/product/<product.id>
     views: {
         'main@root.list':{
-            templateUrl:'javascripts/app/states/root/list/create/app.create.Main.UIView.html',
+            templateUrl:'javascripts/app/states/root/list/detail/app.detail.Main.UIView.html',
             controller:'DetailStateController as ctrl'
         }
     }

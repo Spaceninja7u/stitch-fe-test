@@ -10,6 +10,8 @@ goog.require('app.list.state');
 goog.require('app.root.module');
 goog.require('app.list.module');
 goog.require('app.detail.module');
+goog.require('app.create.module');
+
 goog.require('lib.angular.ui.router.stateHelper');
 
 
@@ -23,6 +25,7 @@ app.states.module = angular.module('app.states.module', ['ui.router',
                                                          'ui.router.stateHelper',
                                                          app.root.module.name,
                                                          app.list.module.name,
-                                                         app.detail.module.name])
+                                                         app.detail.module.name,
+                                                         app.create.module.name])
     .config(app.states.routesConfig_);
 

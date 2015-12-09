@@ -10,8 +10,8 @@ app.create.state.Create = {
     url:'new/', //resolves to /list/new/
     views: {
         'main@root.list':{
-            templateUrl:'javascripts/app/states/root/list/detail/app.detail.Main.UIView.html',
-            controller:'DetailStateController as ctrl'
+            templateUrl:'javascripts/app/states/root/list/create/app.create.Main.UIView.html',
+            controller:'CreateStateController as ctrl'
         }
     }
 };

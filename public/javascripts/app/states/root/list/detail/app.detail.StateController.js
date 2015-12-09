@@ -25,7 +25,13 @@ app.detail.controller.StateController = function($scope, $stateParams, $state, C
     };
 
     Catalog.getProduct($stateParams.id).then(function(product) {
-        $scope.currentProduct = product;
+        $scope.model = product;
     });
 
+};
+
+app.detail.controller.StateController.prototype.save = function() {
+  this.ij_.catalog.updateBasic(this.ij_.scope.model).then(function(data) {
+    self.ij_.scope.messages = [{type:'success', text:'Product updated'}];
+  });
 };

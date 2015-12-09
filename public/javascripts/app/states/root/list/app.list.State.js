@@ -9,6 +9,7 @@ goog.provide('app.list.state');
 Refactored Detail to be a child state of List so we don't reload the sidebar content
  */
 goog.require('app.detail.state');
+goog.require('app.create.state');
 app.list.state.List = {
     name:'list', //resolves to root.list
     url:'list/', //resolves to /list/
@@ -19,6 +20,7 @@ app.list.state.List = {
         }
     },
     children:[
-        app.detail.state.Detail
+        app.detail.state.Detail,
+        app.create.state.Create
     ]
 };
