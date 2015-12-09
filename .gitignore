@@ -3,3 +3,5 @@ node_modules
 .DS_Store
 .idea
 public/.sass-cache/*
+bower_components
+public/javascripts/lib/bower_components/*

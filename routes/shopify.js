@@ -4,7 +4,7 @@ var router = express.Router();
 
 var API_KEY = 'c5c57977f9d06b373dbbb443d03e8d41';
 var PASSWD = '511c9834de8fd8fd8d57c3c34d540122';
-var STORE_NAME = 'StitchlabsTest';
+var STORE_NAME = 'samedwards';
 
 router.get('/get', function(req, res) {
 

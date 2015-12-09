@@ -1,20 +1,26 @@
-<html>
+<!doctype html>
+<html lang="en">
 	<head>
-	</head>
-	<body>
-		<h1>Hello World</h1>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="description" content="Buy replacement and upgraded TARDIS components and console circuits">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="css/main.css">
+    </head>
+	<body ng-app="shopify.tardisworld.app">
+        <div class="container-fluid">
+            <ui-view></ui-view>
+        </div>
 
-		<script type="text/javascript" src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
-		<script type="text/javascript" src="javascripts/lib/moment/moment.2.10.6/moment.js"></script>
 
-		<script>
-			$.get('shopify/get?path=/admin/products.json').done(function(data){
-				console.debug(data);
 
-				data.products.forEach(function(element, index){
-					$('body').append(element.title + ", ");
-				});
-			});
-		</script>
+        <script src="javascripts/lib/bower_components/google-closure-library/closure/goog/base.js"></script>
+        <script src="javascripts/lib/bower_components/google-closure-library/closure/goog/deps.js"></script>
+
+        <script src="javascripts/dependencies.bower.js"></script>
+        <script src="javascripts/dependencies.app.js"></script>
+
+        <script>goog.require('shopify.tardisworld');</script>
+
 	</body>
 </html>
